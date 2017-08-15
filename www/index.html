@@ -75,6 +75,12 @@
         <script type="application/javascript" src="sidebar/js/jquery.hammer.js"></script>
         <script type="application/javascript" src="sidebar/js/swipe-hammer.js"></script>
         <script type="application/javascript" src="sidebar/js/sidebar.js"></script>
+        <script type="application/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=true"></script>
+        <script type="application/javascript" src="google_maps/google_maps.js"></script>
+        <script type="application/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js"></script>
+        <script type="application/javascript" src="chartJS/chartJS.js"></script>
+        <script type="application/javascript" src="https://www.google.com/jsapi"></script>
+        <script type="application/javascript" src="chart/chart.js"></script>
     </head>
 
     <body>
@@ -250,7 +256,18 @@
                     </div>
                     <div class="widget-container content-area horiz-area wrapping-col right"></div>
                 </div>
-                <div class="upage-content ac0 content-area vertical-col left" id="page_10_58"></div>
+                <div class="upage-content ac0 content-area vertical-col left" id="page_10_58">
+                    <div class="grid grid-pad urow uib_row_6 row-height-6" data-uib="layout/row" data-ver="0">
+                        <div class="col uib_col_6 col-0_12-12" data-uib="layout/col" data-ver="0">
+                            <div class="widget-container content-area vertical-col">
+                                <div class="widget uib_w_45 charts-size d-margins" data-uib="media/chart" data-ver="0" data-url="https://docs.google.com/spreadsheets/d/1-d0pYZelXLjqRGfSBgTbZ5PNEv9pToiCq4ntArSoP0g/edit?usp=sharing" data-chart-width="250" data-chart-height="400" data-query-string="select A,B,C"
+                                id="my_chart" data-chart-type="Bar"></div>
+                                <span class="uib_shim"></span>
+                            </div>
+                        </div>
+                        <span class="uib_shim"></span>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="upage hidden" id="videos">
@@ -264,7 +281,34 @@
                     </div>
                     <div class="widget-container content-area horiz-area wrapping-col right"></div>
                 </div>
-                <div class="upage-content ac0 content-area vertical-col left" id="page_11_2"></div>
+                <div class="upage-content ac0 content-area vertical-col left" id="page_11_2">
+                    <div class="grid grid-pad urow uib_row_7 row-height-7" data-uib="layout/row" data-ver="0">
+                        <div class="col uib_col_7 col-0_12-12" data-uib="layout/col" data-ver="0">
+                            <div class="widget-container content-area vertical-col">
+                                <div class="embed-video widget uib_w_46 d-margins" data-uib="media/youtube" data-ver="0">
+                                    <iframe src="http://www.youtube.com/embed/rryxZjqLtNs?wmode=transparent">
+                                    </iframe>
+                                </div>
+                                <span class="uib_shim"></span>
+                            </div>
+                        </div>
+                        <span class="uib_shim"></span>
+                    </div>
+                    <div class="grid grid-pad urow uib_row_8 row-height-8" data-uib="layout/row" data-ver="0">
+                        <div class="col uib_col_8 col-0_12-12" data-uib="layout/col" data-ver="0">
+                            <div class="widget-container content-area vertical-col">
+                                <figure class="margin-auto widget uib_w_47 d-margins" data-uib="media/video" data-ver="0">
+                                    <video controls="controls">
+                                        <source src="/images/trailer.webm" type="video/webm">
+                                    </video>
+                                </figure>
+                                <span class="uib_shim"></span>
+                            </div>
+                        </div>
+                        <span class="uib_shim"></span>
+                    </div>
+
+                </div>
             </div>
         </div>
         <div class="upage hidden" id="location">
@@ -278,7 +322,17 @@
                     </div>
                     <div class="widget-container content-area horiz-area wrapping-col right"></div>
                 </div>
-                <div class="upage-content ac0 content-area vertical-col left" id="page_12_36"></div>
+                <div class="upage-content ac0 content-area vertical-col left" id="page_12_36">
+                    <div class="grid grid-pad urow uib_row_5 row-height-5" data-uib="layout/row" data-ver="0">
+                        <div class="col uib_col_5 col-0_12-12" data-uib="layout/col" data-ver="0">
+                            <div class="widget-container content-area vertical-col">
+                                <div class="widget uib_w_44 maps-size d-margins" data-uib="media/google_maps" data-ver="0" data-rpath="null" data-zoom="8" data-long="103.125948" data-lat="3.733137"></div>
+                                <span class="uib_shim"></span>
+                            </div>
+                        </div>
+                        <span class="uib_shim"></span>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="upage hidden" id="feedback">
