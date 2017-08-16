@@ -111,14 +111,14 @@
                         <div class="col uib_col_2 col-0_12-12" data-uib="layout/col" data-ver="0">
                             <div class="widget-container content-area vertical-col">
                                 <div class="table-thing widget uib_w_2 d-margins" data-uib="twitter%20bootstrap/input" data-ver="1">
-                                    <label class="narrow-control"></label>
-                                    <input class="wide-control form-control default" type="text" placeholder="Username">
+                                    <label class="narrow-control" for="username"></label>
+                                    <input class="wide-control form-control default" type="text" placeholder="Username" name="username" id="username">
                                 </div>
                                 <div class="table-thing widget uib_w_3 d-margins" data-uib="twitter%20bootstrap/input" data-ver="1">
-                                    <label class="narrow-control"></label>
-                                    <input class="wide-control form-control default" type="password" placeholder="Password">
+                                    <label class="narrow-control" for="password"></label>
+                                    <input class="wide-control form-control default" type="password" placeholder="Password" name="password" id="password">
                                 </div>
-                                <button class="btn widget uib_w_4 d-margins btn-success" data-uib="twitter%20bootstrap/button" data-ver="1">Login</button>
+                                <button class="btn widget uib_w_4 d-margins btn-success" data-uib="twitter%20bootstrap/button" data-ver="1" id="submit_form_button">Login</button>
                                 <button class="btn widget uib_w_5 d-margins btn-sm btn-link" data-uib="twitter%20bootstrap/button" data-ver="1">Create Account</button>
                                 <button class="btn widget uib_w_6 d-margins btn-link" data-uib="twitter%20bootstrap/button" data-ver="1">Forgot your password?</button>
                                 <span class="uib_shim"></span>
@@ -145,23 +145,31 @@
                     <div class="grid grid-pad urow uib_row_3 row-height-3" data-uib="layout/row" data-ver="0">
                         <div class="col uib_col_3 col-0_12-12" data-uib="layout/col" data-ver="0">
                             <div class="widget-container content-area vertical-col">
+                                <div class="table-thing widget uib_w_54 d-margins" data-uib="twitter%20bootstrap/input" data-ver="1">
+                                    <label class="narrow-control" for="name"></label>
+                                    <input class="wide-control form-control default" type="text" placeholder="Name" id="name" name="name">
+                                </div>
                                 <div class="table-thing widget uib_w_9 d-margins" data-uib="twitter%20bootstrap/input" data-ver="1">
-                                    <label class="narrow-control"></label>
-                                    <input class="wide-control form-control default" type="text" placeholder="Username">
+                                    <label class="narrow-control" for="username2"></label>
+                                    <input class="wide-control form-control default" type="text" placeholder="Username" name="username2" id="username2">
                                 </div>
                                 <div class="table-thing widget uib_w_10 d-margins" data-uib="twitter%20bootstrap/input" data-ver="1">
-                                    <label class="narrow-control"></label>
-                                    <input class="wide-control form-control default" type="password" placeholder="Password">
+                                    <label class="narrow-control" for="password1"></label>
+                                    <input class="wide-control form-control default" type="password" placeholder="Password" name="password1" id="password1">
                                 </div>
                                 <div class="table-thing widget uib_w_11 d-margins" data-uib="twitter%20bootstrap/input" data-ver="1">
-                                    <label class="narrow-control"></label>
-                                    <input class="wide-control form-control default" type="password" placeholder="Confirm Password">
+                                    <label class="narrow-control" for="password2"></label>
+                                    <input class="wide-control form-control default" type="password" placeholder="Confirm Password" name="password2" id="password2">
                                 </div>
                                 <div class="table-thing widget uib_w_12 d-margins" data-uib="twitter%20bootstrap/input" data-ver="1">
-                                    <label class="narrow-control"></label>
-                                    <input class="wide-control form-control default" type="text" placeholder="Email">
+                                    <label class="narrow-control" for="email1"></label>
+                                    <input class="wide-control form-control default" type="text" placeholder="Email" name="email1" id="email1">
                                 </div>
-                                <button class="btn widget uib_w_13 d-margins btn-default" data-uib="twitter%20bootstrap/button" data-ver="1">Register</button>
+                                <div class="table-thing widget uib_w_53 d-margins" data-uib="twitter%20bootstrap/input" data-ver="1">
+                                    <label class="narrow-control" for="email2"></label>
+                                    <input class="wide-control form-control default" type="text" placeholder="Confirm Email" name="email2" id="email2">
+                                </div>
+                                <button class="btn widget uib_w_13 d-margins btn-default" data-uib="twitter%20bootstrap/button" data-ver="1" id="register_button">Register</button>
                                 <span class="uib_shim"></span>
                             </div>
                         </div>
@@ -176,7 +184,7 @@
                     <h2>Dashboard</h2>
                     <div class="widget-container wrapping-col single-centered"></div>
                     <div class="widget-container content-area horiz-area wrapping-col left">
-                        <button class="btn widget uib_w_16 d-margins btn-default" data-uib="twitter%20bootstrap/button" data-ver="1">Logout</button>
+                        <button class="btn widget uib_w_16 d-margins btn-default" data-uib="twitter%20bootstrap/button" data-ver="1" id="logout">Logout</button>
                     </div>
                     <div class="widget-container content-area horiz-area wrapping-col right">
                         <button class="btn widget uib_w_17 d-margins btn-default" data-uib="twitter%20bootstrap/button" data-ver="1"><i class="glyphicon glyphicon-th button-icon-left" data-position="left"></i>
@@ -233,7 +241,17 @@
                     </div>
                     <div class="widget-container content-area horiz-area wrapping-col right"></div>
                 </div>
-                <div class="upage-content ac0 content-area vertical-col left" id="page_9_31"></div>
+                <div class="upage-content ac0 content-area vertical-col left" id="page_9_31">
+                    <div class="grid grid-pad urow uib_row_10 row-height-10" data-uib="layout/row" data-ver="0">
+                        <div class="col uib_col_10 col-0_12-12" data-uib="layout/col" data-ver="0">
+                            <div class="widget-container content-area vertical-col">
+                                <div id="listdata"></div>
+                                <span class="uib_shim"></span>
+                            </div>
+                        </div>
+                        <span class="uib_shim"></span>
+                    </div>
+                </div>
                 <div class="uib-footer uib-footer-fixed footer-bg container-group inner-element uib_w_42 footerstyle" data-uib="layout/footer" data-ver="0">
                     <h2>Others</h2>
                     <div class="widget-container wrapping-col single-centered"></div>
@@ -337,7 +355,7 @@
         </div>
         <div class="upage hidden" id="feedback">
             <div class="upage-outer">
-                <div class="uib-header header-bg container-group inner-element uib_w_32" data-uib="layout/header" data-ver="0">
+                <div class="uib-header header-bg container-group inner-element uib_w_32 footerstyle" data-uib="layout/header" data-ver="0">
                     <h2>Feedback Form</h2>
                     <div class="widget-container wrapping-col single-centered"></div>
                     <div class="widget-container content-area horiz-area wrapping-col left">
@@ -346,7 +364,33 @@
                     </div>
                     <div class="widget-container content-area horiz-area wrapping-col right"></div>
                 </div>
-                <div class="upage-content ac0 content-area vertical-col left" id="page_13_12"></div>
+                <div class="upage-content ac0 content-area vertical-col left" id="page_13_12">
+                    <div class="grid grid-pad urow uib_row_9 row-height-9" data-uib="layout/row" data-ver="0">
+                        <div class="col uib_col_9 col-0_12-12" data-uib="layout/col" data-ver="0">
+                            <div class="widget-container content-area vertical-col">
+                                <div class="table-thing widget uib_w_48 d-margins" data-uib="twitter%20bootstrap/input" data-ver="1">
+                                    <label class="narrow-control" for="fullname"></label>
+                                    <input class="wide-control form-control default" type="text" placeholder="Full Name" name="fullname" id="fullname">
+                                </div>
+                                <div class="table-thing widget uib_w_49 d-margins" data-uib="twitter%20bootstrap/input" data-ver="1">
+                                    <label class="narrow-control" for="email"></label>
+                                    <input class="wide-control form-control default" type="text" placeholder="Email" name="email" id="email">
+                                </div>
+                                <div class="table-thing widget uib_w_50 d-margins" data-uib="twitter%20bootstrap/input" data-ver="1">
+                                    <label class="narrow-control" for="telephone"></label>
+                                    <input class="wide-control form-control default" type="text" placeholder="Telephone" name="telephone" id="telephone">
+                                </div>
+                                <div class="table-thing widget uib_w_51 d-margins" data-uib="twitter%20bootstrap/text_area" data-ver="1">
+                                    <label class="narrow-control"></label>
+                                    <textarea rows="2" class="wide-control form-control" wrap="soft" placeholder="Message" name="message" id="message"></textarea>
+                                </div>
+                                <button class="btn widget uib_w_52 d-margins btn-default" data-uib="twitter%20bootstrap/button" data-ver="1" id="sendfeedback">Send Feedback</button>
+                                <span class="uib_shim"></span>
+                            </div>
+                        </div>
+                        <span class="uib_shim"></span>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="upage hidden" id="info">
@@ -361,6 +405,24 @@
                     <div class="widget-container content-area horiz-area wrapping-col right"></div>
                 </div>
                 <div class="upage-content ac0 content-area vertical-col left" id="page_14_85"></div>
+            </div>
+        </div>
+        <div class="upage hidden" id="iframe">
+            <div class="upage-outer">
+                <div class="uib-header header-bg container-group inner-element uib_w_55" data-uib="layout/header" data-ver="0">
+                    <h2>iframe</h2>
+                    <div class="widget-container wrapping-col single-centered"></div>
+                    <div class="widget-container content-area horiz-area wrapping-col left">
+                        <button class="btn widget uib_w_56 d-margins btn-default" data-uib="twitter%20bootstrap/button" data-ver="1"><i class="glyphicon glyphicon-chevron-left button-icon-left" data-position="left"></i>
+                        </button>
+                    </div>
+                    <div class="widget-container content-area horiz-area wrapping-col right"></div>
+                </div>
+                <div class="upage-content ac0 content-area vertical-col left">
+                    <div class="widget uib_w_57 d-margins iframe-size" data-uib="media/iframe" data-ver="0">
+                        <iframe src="http://user.mydroid.io/yusuf/index.php"></iframe>
+                    </div>
+                </div>
             </div>
         </div>
 

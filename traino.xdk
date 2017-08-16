@@ -6,7 +6,7 @@
       "projectTypeName": "com.intel.xdk.projecttype.jsapp",
       "src": "jsapp/template-blank-cordova-ad-project/sample.zip",
       "projectGuid": "131484b0-6979-4f12-a6f3-73493ccb5814",
-      "lastModifiedDate": 1500258873276,
+      "lastModifiedDate": 1502857264173,
       "creationDate": 1492588665496
     },
     "XDK-app-designer": "true",
@@ -108,8 +108,8 @@
         },
         "isActive_": true,
         "certificateId_": "ArnF3bHsikOfzaynftQZGA2",
-        "appName_": "recap",
-        "appID_": "my.mu.recap",
+        "appName_": "traino",
+        "appID_": "my.umpholdings.traino",
         "appAccess_": {
           "mode": "whitelist",
           "network": [
@@ -126,15 +126,34 @@
           ],
           "navigation": []
         },
-        "icons_": [],
+        "icons_": [
+          {
+            "density": "mdpi",
+            "relPath": "package-assets/MDPI.png",
+            "width": 48,
+            "height": 48
+          },
+          {
+            "density": "hdpi",
+            "relPath": "package-assets/HDPI.png",
+            "width": 72,
+            "height": 72
+          },
+          {
+            "density": "xhdpi",
+            "relPath": "package-assets/XHDPI.png",
+            "width": 96,
+            "height": 96
+          }
+        ],
         "splashes_": [],
         "addlPermissions_": "",
         "excludedLibraries_": "",
         "cordovaCLIVersion_": "6.5.0",
         "crosswalkVersion_": "19",
         "appVersion_": "0.0.1",
-        "appAuthor_": "Intel XDK",
-        "appDescription_": "Template to develop a Cordova mobile web app using the App Designer UI editor.",
+        "appAuthor_": "yusuf",
+        "appDescription_": "train app",
         "appVersionCode_": "1",
         "signed_": true
       },
@@ -187,7 +206,7 @@
           "windows-publisher-display-name": "",
           "windows-publisher-id": ""
         },
-        "isActive_": true,
+        "isActive_": false,
         "certificateId_": "",
         "appName_": "recap",
         "appID_": "xdk.intel.blank.ad.template",
